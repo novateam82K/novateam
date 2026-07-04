@@ -43,23 +43,36 @@ margin-top:10px;
 color:#ddd;
 }
 
-/* DISCORD BUTTON */
-.discord-btn{
+/* BUTTONS */
+.btn{
 display:inline-block;
-margin-top:20px;
+margin:10px;
 padding:12px 20px;
-background:#5865F2;
 color:white;
 text-decoration:none;
 font-weight:bold;
 border-radius:12px;
-box-shadow:0 0 15px #5865F2aa;
+box-shadow:0 0 15px rgba(255,255,255,0.2);
 transition:0.3s;
 }
 
+/* DISCORD */
+.discord-btn{
+background:#5865F2;
+}
 .discord-btn:hover{
 transform:scale(1.1);
 box-shadow:0 0 25px #5865F2;
+}
+
+/* TIKTOK */
+.tiktok-btn{
+background:#000;
+border:2px solid #ff2d55;
+}
+.tiktok-btn:hover{
+transform:scale(1.1);
+box-shadow:0 0 25px #ff2d55;
 }
 
 /* VIDEOS */
@@ -92,13 +105,6 @@ border:none;
 border-radius:15px;
 }
 
-video{
-width:100%;
-height:220px;
-border-radius:15px;
-background:black;
-}
-
 p{
 margin-top:10px;
 text-align:center;
@@ -121,26 +127,34 @@ color:#aaa;
 <div class="logo">NOVATEAM</div>
 <h2>🔥 Les meilleures vidéos Fortnite 🔥</h2>
 
-<!-- DISCORD BUTTON -->
-<a href="https://discord.gg/REVmqPTNx" target="_blank" class="discord-btn">
+<!-- BOUTONS -->
+<a href="https://discord.gg/REVmqPTNx" target="_blank" class="btn discord-btn">
   NOVATEAM ➜ Discord
+</a>
+
+<a href="https://www.tiktok.com/@la.nova.team/video/7658716192722439457?is_from_webapp=1&sender_device=pc" target="_blank" class="btn tiktok-btn">
+  NOVATEAM ➜ TikTok
 </a>
 
 </header>
 
 <div class="container">
 
-<!-- VIDEO 1 YOUTUBE -->
+<!-- VIDEO 1 -->
 <div class="video">
-<iframe src="https://www.youtube.com/embed/hAj4zeE5csA" allowfullscreen></iframe>
+<iframe 
+src="https://www.youtube.com/embed/5LEm5RSSpfU"
+allowfullscreen>
+</iframe>
 <p>Vidéo Fortnite 1</p>
 </div>
 
-<!-- VIDEO 2 DISCORD -->
+<!-- VIDEO 2 -->
 <div class="video">
-<video controls>
-<source src="https://cdn.discordapp.com/attachments/1522993788262547648/1523016416016728215/8bb640d40214ada19dd1b097667d3821.mp4" type="video/mp4">
-</video>
+<iframe 
+src="https://www.youtube.com/embed/SBDcIFwWiHY"
+allowfullscreen>
+</iframe>
 <p>Vidéo Fortnite 2</p>
 </div>
 
