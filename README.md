@@ -35,29 +35,7 @@ text-align:center;
 font-size:70px;
 font-weight:bold;
 color:#d600ff;
-text-shadow:
-0 0 5px #d600ff,
-0 0 10px #d600ff,
-0 0 20px #d600ff,
-0 0 40px #9d00ff,
-0 0 80px #9d00ff;
-animation:neon 2s infinite alternate;
-}
-
-@keyframes neon{
-from{
-text-shadow:
-0 0 5px #d600ff,
-0 0 10px #d600ff,
-0 0 20px #d600ff;
-}
-to{
-text-shadow:
-0 0 10px #d600ff,
-0 0 25px #d600ff,
-0 0 50px #d600ff,
-0 0 90px #9d00ff;
-}
+text-shadow:0 0 10px #d600ff,0 0 30px #9d00ff;
 }
 
 h2{
@@ -69,16 +47,17 @@ color:#ddd;
 width:90%;
 margin:auto;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
-gap:30px;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
 padding:40px;
 }
 
 .video{
-width:100%;
-height:220px;
-border-radius:15px;
-background:black;
+background:rgba(255,255,255,0.08);
+border:2px solid #a000ff;
+border-radius:20px;
+padding:15px;
+transition:0.3s;
 }
 
 .video:hover{
@@ -86,11 +65,20 @@ transform:scale(1.05);
 box-shadow:0 0 35px #c000ff;
 }
 
+/* YouTube */
 iframe{
 width:100%;
 height:220px;
 border:none;
 border-radius:15px;
+}
+
+/* Discord MP4 */
+video{
+width:100%;
+height:220px;
+border-radius:15px;
+background:black;
 }
 
 p{
@@ -111,28 +99,27 @@ color:#aaa;
 <body>
 
 <header>
-
 <div class="logo">NOVATEAM</div>
-
 <h2>🔥 Les meilleures vidéos Fortnite 🔥</h2>
-
 </header>
 
 <div class="container">
 
+<!-- VIDEO 1 YOUTUBE SHORTS -->
 <div class="video">
-<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
-<p>Vidéo Fortnite 1</p>
+<iframe 
+src="https://www.youtube.com/embed/hAj4zeE5csA"
+allowfullscreen>
+</iframe>
+<p>Vidéo Fortnite 1 (Shorts)</p>
 </div>
 
+<!-- VIDEO 2 DISCORD -->
 <div class="video">
-<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+<video controls>
+<source src="https://cdn.discordapp.com/attachments/1522993788262547648/1523016416016728215/8bb640d40214ada19dd1b097667d3821.mp4?ex=6a4a9311&is=6a494191&hm=01ef0dcd8e0523c11e283ec6e9ec2179d681cf2a581ace3d7c0c4d4d6eee53b2" type="video/mp4">
+</video>
 <p>Vidéo Fortnite 2</p>
-</div>
-
-<div class="video">
-<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
-<p>Vidéo Fortnite 3</p>
 </div>
 
 </div>
