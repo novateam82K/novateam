@@ -75,12 +75,10 @@ padding:40px;
 }
 
 .video{
-background:rgba(255,255,255,0.08);
-border:2px solid #a000ff;
-border-radius:20px;
-padding:15px;
-box-shadow:0 0 20px #8000ff55;
-transition:0.3s;
+width:100%;
+height:220px;
+border-radius:15px;
+background:black;
 }
 
 .video:hover{
