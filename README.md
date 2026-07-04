@@ -52,38 +52,50 @@ color:white;
 text-decoration:none;
 font-weight:bold;
 border-radius:12px;
+box-shadow:0 0 15px rgba(255,255,255,0.2);
 transition:0.3s;
 }
 
-.discord{background:#5865F2;}
-.tiktok{background:#000;border:2px solid #ff2d55;}
-
-.btn:hover{
+/* DISCORD */
+.discord-btn{
+background:#5865F2;
+}
+.discord-btn:hover{
 transform:scale(1.1);
+box-shadow:0 0 25px #5865F2;
 }
 
-/* SECTIONS */
-.section{
-width:90%;
-margin:auto;
-padding:30px;
+/* TIKTOK */
+.tiktok-btn{
+background:#000;
+border:2px solid #ff2d55;
 }
-
-.card{
-background:rgba(255,255,255,0.08);
-border:2px solid #a000ff;
-border-radius:20px;
-padding:20px;
-margin-top:20px;
-box-shadow:0 0 20px rgba(160,0,255,0.3);
+.tiktok-btn:hover{
+transform:scale(1.1);
+box-shadow:0 0 25px #ff2d55;
 }
 
 /* VIDEOS */
 .container{
+width:90%;
+margin:auto;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:25px;
-padding:20px;
+padding:40px;
+}
+
+.video{
+background:rgba(255,255,255,0.08);
+border:2px solid #a000ff;
+border-radius:20px;
+padding:15px;
+transition:0.3s;
+}
+
+.video:hover{
+transform:scale(1.05);
+box-shadow:0 0 35px #c000ff;
 }
 
 iframe{
@@ -91,6 +103,12 @@ width:100%;
 height:220px;
 border:none;
 border-radius:15px;
+}
+
+p{
+margin-top:10px;
+text-align:center;
+font-size:18px;
 }
 
 footer{
@@ -107,66 +125,37 @@ color:#aaa;
 <header>
 
 <div class="logo">NOVATEAM</div>
-<h2>🔥 Fortnite Highlights + Tournois 🔥</h2>
+<h2>🔥 Les meilleures vidéos Fortnite 🔥</h2>
 
-<a href="https://discord.gg/REVmqPTNx" target="_blank" class="btn discord">
-NOVATEAM ➜ Discord
+<!-- BOUTONS -->
+<a href="https://discord.gg/REVmqPTNx" target="_blank" class="btn discord-btn">
+  NOVATEAM ➜ Discord
 </a>
 
-<a href="https://www.tiktok.com/@la.nova.team/video/7658716192722439457?is_from_webapp=1&sender_device=pc" target="_blank" class="btn tiktok">
-NOVATEAM ➜ TikTok
+<a href="https://www.tiktok.com/@la.nova.team/video/7658716192722439457?is_from_webapp=1&sender_device=pc" target="_blank" class="btn tiktok-btn">
+  NOVATEAM ➜ TikTok
 </a>
 
 </header>
 
-<!-- VIDEOS -->
-<div class="section">
-<h2>🎥 Vidéos Fortnite</h2>
-
 <div class="container">
 
-<div class="card">
-<iframe src="https://www.youtube.com/embed/5LEm5RSSpfU" allowfullscreen></iframe>
+<!-- VIDEO 1 -->
+<div class="video">
+<iframe 
+src="https://www.youtube.com/embed/5LEm5RSSpfU"
+allowfullscreen>
+</iframe>
 <p>Vidéo Fortnite 1</p>
 </div>
 
-<div class="card">
-<iframe src="https://www.youtube.com/embed/SBDcIFwWiHY" allowfullscreen></iframe>
+<!-- VIDEO 2 -->
+<div class="video">
+<iframe 
+src="https://www.youtube.com/embed/SBDcIFwWiHY"
+allowfullscreen>
+</iframe>
 <p>Vidéo Fortnite 2</p>
-</div>
-
-</div>
-</div>
-
-<!-- TOURNOIS -->
-<div class="section">
-<h2>🏆 Tournois Fortnite Duos</h2>
-
-<div class="card">
-<p>🔥 Début : 18h00</p>
-<p>🎮 Mode : Duos</p>
-<p>💰 Récompense : À définir</p>
-<p>📍 Serveur : Europe</p>
-</div>
-
-<div class="card">
-<p>🔥 Début : 20h30</p>
-<p>🎮 Mode : Duos Arena</p>
-<p>💰 Récompense : Cash / Gift</p>
-<p>📍 Serveur : Europe</p>
-</div>
-
-</div>
-
-<!-- DEMAIN -->
-<div class="section">
-<h2>📅 Section du lendemain</h2>
-
-<div class="card">
-<p>🕒 Programme à venir :</p>
-<p>🎥 Nouvelle vidéo Fortnite</p>
-<p>🏆 Nouveau tournoi Duos</p>
-<p>🔥 Event spécial NovaTeam</p>
 </div>
 
 </div>
