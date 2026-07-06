@@ -120,7 +120,7 @@ border-top:1px solid #333;
 <div class="logo">KNOS</div>
 <h2>🔥 Best Fortnite Highlights 🔥</h2>
 
-<a href="https://discord.gg/REVmqPTNx" target="_blank" class="btn discord-btn">
+<a href="https://discord.gg/KBetDpJV" target="_blank" class="btn discord-btn">
   KNOS ➜ Discord
 </a>
 
