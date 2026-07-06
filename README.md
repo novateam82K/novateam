@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NovaTeam</title>
+<title>knos</title>
 
 <style>
 *{
@@ -14,33 +14,28 @@ font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-background:linear-gradient(135deg,#050505,#150022,#2d0057,#090909);
-background-size:400% 400%;
-animation:bg 12s ease infinite;
-color:white;
+background:#000;
+color:#fff;
 }
 
-@keyframes bg{
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
-}
-
+/* HEADER */
 header{
 padding:40px;
 text-align:center;
+border-bottom:1px solid #333;
 }
 
 .logo{
 font-size:70px;
 font-weight:bold;
-color:#d600ff;
-text-shadow:0 0 10px #d600ff,0 0 30px #9d00ff;
+color:#fff;
+letter-spacing:4px;
+text-shadow:0 0 10px #fff;
 }
 
 h2{
 margin-top:10px;
-color:#ddd;
+color:#bbb;
 }
 
 /* BUTTONS */
@@ -52,27 +47,23 @@ color:white;
 text-decoration:none;
 font-weight:bold;
 border-radius:12px;
-box-shadow:0 0 15px rgba(255,255,255,0.2);
 transition:0.3s;
+border:1px solid #fff;
+}
+
+.btn:hover{
+transform:scale(1.08);
+box-shadow:0 0 15px #fff;
 }
 
 /* DISCORD */
 .discord-btn{
-background:#5865F2;
-}
-.discord-btn:hover{
-transform:scale(1.1);
-box-shadow:0 0 25px #5865F2;
+background:#111;
 }
 
 /* TIKTOK */
 .tiktok-btn{
 background:#000;
-border:2px solid #ff2d55;
-}
-.tiktok-btn:hover{
-transform:scale(1.1);
-box-shadow:0 0 25px #ff2d55;
 }
 
 /* VIDEOS */
@@ -86,16 +77,16 @@ padding:40px;
 }
 
 .video{
-background:rgba(255,255,255,0.08);
-border:2px solid #a000ff;
+background:#0a0a0a;
+border:1px solid #444;
 border-radius:20px;
 padding:15px;
 transition:0.3s;
 }
 
 .video:hover{
-transform:scale(1.05);
-box-shadow:0 0 35px #c000ff;
+transform:scale(1.03);
+border-color:#fff;
 }
 
 iframe{
@@ -103,18 +94,21 @@ width:100%;
 height:220px;
 border:none;
 border-radius:15px;
+filter:grayscale(100%);
 }
 
 p{
 margin-top:10px;
 text-align:center;
 font-size:18px;
+color:#ccc;
 }
 
 footer{
 padding:30px;
 text-align:center;
-color:#aaa;
+color:#666;
+border-top:1px solid #333;
 }
 </style>
 
@@ -124,44 +118,35 @@ color:#aaa;
 
 <header>
 
-<div class="logo">NOVATEAM</div>
-<h2>🔥 Les meilleures vidéos Fortnite 🔥</h2>
+<div class="logo">KNOS</div>
+<h2>🔥 Best Fortnite Highlights 🔥</h2>
 
-<!-- BOUTONS -->
 <a href="https://discord.gg/REVmqPTNx" target="_blank" class="btn discord-btn">
-  NOVATEAM ➜ Discord
+  KNOS ➜ Discord
 </a>
 
 <a href="https://www.tiktok.com/@la.nova.team/video/7658716192722439457?is_from_webapp=1&sender_device=pc" target="_blank" class="btn tiktok-btn">
-  NOVATEAM ➜ TikTok
+  KNOS ➜ TikTok
 </a>
 
 </header>
 
 <div class="container">
 
-<!-- VIDEO 1 -->
 <div class="video">
-<iframe 
-src="https://www.youtube.com/embed/5LEm5RSSpfU"
-allowfullscreen>
-</iframe>
-<p>Vidéo Fortnite 1</p>
+<iframe src="https://www.youtube.com/embed/5LEm5RSSpfU" allowfullscreen></iframe>
+<p>Fortnite Video 1</p>
 </div>
 
-<!-- VIDEO 2 -->
 <div class="video">
-<iframe 
-src="https://www.youtube.com/embed/SBDcIFwWiHY"
-allowfullscreen>
-</iframe>
-<p>Vidéo Fortnite 2</p>
+<iframe src="https://www.youtube.com/embed/SBDcIFwWiHY" allowfullscreen></iframe>
+<p>Fortnite Video 2</p>
 </div>
 
 </div>
 
 <footer>
-© 2026 NOVATEAM - Fortnite Highlights
+© 2026 KNOS - Fortnite Highlights
 </footer>
 
 </body>
